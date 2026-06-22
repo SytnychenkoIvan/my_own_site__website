@@ -183,12 +183,13 @@
 						<div class="contacts__line line"></div>
 					</div>
 					<div class="contacts__body">
-						<form id="contact-form" class="contacts__form form-contacts">
-							<input type="text" id="name" placeholder="Имя" required class="form-contacts__name form-style">
-							<input type="email" id="email" placeholder="Email" required
-								class="form-contacts__email form-style">
-							<textarea id="message" placeholder="Сообщение"
-								class="form-contacts__textarea form-style"></textarea>
+						<form id="contact-form" class="contacts__form form-contacts form">
+							<input data-validate data-required="text" data-error="Заповніть поле" type="text"
+								id="name" placeholder="Ім'я" required class="form-contacts__name form__input">
+							<input data-validate data-required="email" data-error="Заповніть поле" type="email"
+								id="email" placeholder="Email" required class="form-contacts__email form__input">
+							<textarea data-autoheight id="message" placeholder="Повідомлення" type="text"
+								class="form-contacts__textarea form__input"></textarea>
 							<button type="submit" class="form-contacts__button">Отправить</button>
 						</form>
 						<div class="contacts__socials social-contacts">

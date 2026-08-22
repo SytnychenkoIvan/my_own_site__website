@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260822142644">
 	<title>SiteMakerSytnychenko</title>
 </head>
 
@@ -37,8 +37,8 @@
 		<main class="page">
 			<section class="page__main main">
 				<div class="main__container">
-					<img class="main__bg-decor" src="img/main/bg-decor.png" alt="decor">
-					<img class="main__bg-decor-bottom" src="img/main/bg-decor.png" alt="decor">
+					<picture><source srcset="img/main/bg-decor.webp" type="image/webp"><img class="main__bg-decor" src="img/main/bg-decor.png" alt="decor"></picture>
+					<picture><source srcset="img/main/bg-decor.webp" type="image/webp"><img class="main__bg-decor-bottom" src="img/main/bg-decor.png" alt="decor"></picture>
 					<h1 class="main__title">Вітаю, я <span>Іван</span>,<br> Front-end розробник</h1>
 					<p class="main__text">Створюю адаптивні лендінги та сайти</p>
 					<div class="main__actions">
@@ -62,7 +62,7 @@
 							<li>Інтеграція верстки у WordPress</li>
 						</ul>
 						<div class="what__image image">
-							<img src="img/what/what-img.png" alt="Image">
+							<picture><source srcset="img/what/what-img.webp" type="image/webp"><img src="img/what/what-img.png" alt="Image"></picture>
 						</div>
 					</div>
 				</div>
@@ -76,7 +76,29 @@
 					<div class="portfolio__items">
 						<article class="portfolio__item item-portfolio">
 							<div class="item-portfolio__image">
-								<img src="img/portfolio/lash350x250.png" alt="Lashmaker">
+								<picture><source srcset="img/portfolio/iron350m250.webp" type="image/webp"><img src="img/portfolio/iron350m250.png" alt="ironPathLogistik"></picture>
+							</div>
+							<div class="item-portfolio__body">
+								<div class="item-portfolio__stacks">
+									<div class="item-portfolio__stack">HTML</div>
+									<div class="item-portfolio__stack">SCSS</div>
+									<div class="item-portfolio__stack">JavaScript</div>
+									<div class="item-portfolio__stack">GULP</div>
+									<div class="item-portfolio__stack">Netlify</div>
+								</div>
+								<h3 class="item-portfolio__title">IronPathLogistik</h3>
+								<div class="item-portfolio__text">Сайт для компанії мыжнародних перевезень вантажу</div>
+								<div class="item-portfolio__actions">
+									<a href="https://ironpathlogisti.netlify.app/"
+										class="item-portfolio__action item-portfolio__action-green" target="blank">Live</a>
+									<a href="https://github.com/SytnychenkoIvan/iron_path_logistics__deploy"
+										class="item-portfolio__action" target="blank">GitHub</a>
+								</div>
+							</div>
+						</article>
+						<article class="portfolio__item item-portfolio">
+							<div class="item-portfolio__image">
+								<picture><source srcset="img/portfolio/lash350x250.webp" type="image/webp"><img src="img/portfolio/lash350x250.png" alt="Lashmaker"></picture>
 							</div>
 							<div class="item-portfolio__body">
 								<div class="item-portfolio__stacks">
@@ -97,7 +119,7 @@
 						</article>
 						<article class="portfolio__item item-portfolio">
 							<div class="item-portfolio__image">
-								<img src="img/portfolio/ondo.png" alt="Ondontologia">
+								<picture><source srcset="img/portfolio/ondo.webp" type="image/webp"><img src="img/portfolio/ondo.png" alt="Ondontologia"></picture>
 							</div>
 							<div class="item-portfolio__body">
 								<div class="item-portfolio__stacks">
@@ -119,7 +141,7 @@
 						</article>
 						<article class="portfolio__item item-portfolio">
 							<div class="item-portfolio__image">
-								<img src="img/portfolio/foodmood.png" alt="Foodmood">
+								<picture><source srcset="img/portfolio/foodmood.webp" type="image/webp"><img src="img/portfolio/foodmood.png" alt="Foodmood"></picture>
 							</div>
 							<div class="item-portfolio__body">
 								<div class="item-portfolio__stacks">
@@ -138,7 +160,32 @@
 								</div>
 							</div>
 						</article>
+						<article class="portfolio__item item-portfolio">
+							<div class="item-portfolio__image">
+								<picture><source srcset="img/portfolio/positivus350x250.webp" type="image/webp"><img src="img/portfolio/positivus350x250.png" alt="Positivus"></picture>
+							</div>
+							<div class="item-portfolio__body">
+								<div class="item-portfolio__stacks">
+									<div class="item-portfolio__stack">HTML</div>
+									<div class="item-portfolio__stack">SCSS</div>
+									<div class="item-portfolio__stack">JavaScript</div>
+									<div class="item-portfolio__stack">GULP</div>
+								</div>
+								<h3 class="item-portfolio__title">Positivus</h3>
+								<div class="item-portfolio__text">Приклад сайту для агенції інтернет-маркетингу</div>
+								<div class="item-portfolio__actions">
+									<a href="https://sytnychenkoivan.github.io/positivus-website/"
+										class="item-portfolio__action item-portfolio__action-green" target="blank">Live</a>
+									<a href="https://github.com/SytnychenkoIvan/positivus-website" class="item-portfolio__action"
+										target="blank">GitHub</a>
+								</div>
+							</div>
+						</article>
 					</div>
+					<button type="button" class="portfolio__more">
+						<span>Показати ще</span>
+						<span>Приховати</span>
+					</button>
 				</div>
 			</section>
 			<section class="page__stack stack">
@@ -173,7 +220,7 @@
 							<li>Здача проекту</li>
 						</ul>
 						<div class="how__image image">
-							<img src="img/how/how.png" alt="Image">
+							<picture><source srcset="img/how/how.webp" type="image/webp"><img src="img/how/how.png" alt="Image"></picture>
 						</div>
 					</div>
 				</div>
@@ -237,7 +284,7 @@
 	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js"></script>
+	<script src="js/app.min.js?_v=20260822142644"></script>
 </body>
 
 </html>
